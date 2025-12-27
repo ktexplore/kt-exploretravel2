@@ -622,70 +622,26 @@
     <p class="sub">Tell us your dates and interests — we’ll shape the perfect itinerary.</p>
 
     <!-- FormSubmit integration -->
-    <form action="https://formsubmit.co/ktexploretravel@gmail.com" method="POST">
-      <div class="form-row">
-        <label>
-          
-          <input type="text" name="name" placeholder="Full Name" required />
-        </label>
-        <label>
-          
-          <input type="email" name="email" placeholder="Email Address" required />
-        </label>
-      </div>
+   <form action="https://script.google.com/macros/s/AKfycbwPWub1OlwHa-taTy3tjVUj5Nj6eGi21WVnZXtptApiSqPxQMp_n_UjvSkWrKpqZjI/exec" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <select name="package" required>
+    <option value="">Select Package</option>
+    <option>City tour</option>
+    <option>northern ethiopia tour</option>
+    <option>southern Ethiopia tour</option>
+    <option>hiking</option>
+    <option>camping</option>
+    <option>2026 trip</option>
+  </select>
+  <input type="number" name="travellers" placeholder="Number of travellers" min="1" required>
+  <input type="date" name="startDate" required>
+  <input type="date" name="endDate" required>
+  <textarea name="message" placeholder="Special requests..."></textarea>
+  <button type="submit">Confirm Booking</button>
+</form>
 
-      <div class="form-row">
-        <label>
-          
-          <input type="tel" name="phone" placeholder="Phone Number (+251...)" required />
-        </label>
-        <label>
-          
-          <select name="package" required>
-            <option value="">Select Package</option>
-            <option>City tour</option>
-            <option>northern ethiopia tour</option>
-            <option>southern Ethiopia tour</option>
-            <option>hiking</option>
-            <option>camping</option>
-            <option>2026 trip</option>
-          </select>
-        </label>
-      </div>
-
-      <!-- Number of travellers -->
-      <div class="form-row">
-        <label>
-          
-          <input type="number" name="travellers" placeholder="Number of travellers" min="1" required />
-        </label>
-      </div>
-
-      <!-- Dates with labels -->
-      <div class="form-row">
-        <label>
-          Start Date
-          <input type="date" name="startDate" required />
-        </label>
-        <label>
-          End Date
-          <input type="date" name="endDate" required />
-        </label>
-      </div>
-
-      <label>
-        
-        <textarea name="message" placeholder="Special requests, group size, preferences..."></textarea>
-      </label>
-<!-- Enable auto-logging to Google Sheets --> 
-       <input type="hidden" name="_google" value="true">
-      
-      <!-- Hidden fields for FormSubmit -->
-      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-      <input type="hidden" name="_subject" value="New Booking Request from KTExplore">
-      <input type="hidden" name="_autoresponse" value="Thank you for booking with KTExplore! We’ll contact you shortly to confirm details.">
-
-      <button type="submit">Confirm Booking</button>
     </form>
   </div>
 </section>
@@ -1037,4 +993,5 @@
 
 </body>
 </html>
+
 
